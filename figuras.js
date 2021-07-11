@@ -122,3 +122,29 @@ function calcularAreaCirculo() {
     const area = areaCirculo(value);
     alert(area);
 }
+
+
+// Reto Triangulo isoceles:
+function trianguloIsoceles(lado1, lado2, base) {
+    if (lado1 === lado2 && base != lado1 && base != lado2) {
+        
+        const altura = Math.sqrt(lado1**2 - (base / 2)**2)
+        alert(altura);
+    }
+    else {
+        alert("El primer lado y el segundo tienen que ser iguales y la base tiene que ser distina a estos lados para que sea un triangulo isoceles");
+    }
+}
+
+function calcularAlturaTrianguloIsoceles() {
+    const input1 = document.getElementById("Lado1");
+    const input2 = document.getElementById("Lado2");
+    const input3 = document.getElementById("Base");
+
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const value3 = Number(input3.value);
+
+    const altura = trianguloIsoceles(value1, value2, value3);
+    alert(altura); 
+}
