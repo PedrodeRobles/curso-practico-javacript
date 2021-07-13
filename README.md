@@ -10,7 +10,14 @@ Ejercicios de javascript basicos para entender mejor el lenguaje y su logica
  - Tercer paso: crear funciones
  - Cuarto paso: integrar js con html
 
- ## Taller #2: Porcentajes y descuentos
+## Taller #2: Porcentajes y descuentos
+ - Primer paso: definir formulas
+ - Segundo: implementar las formulas
+ en JavaScript
+ - Tercer paso: crear funciones
+ - Cuarto paso: integrar js con html
+
+ ## Taller #4: Promedio. mediana y moda
  - Primer paso: definir formulas
  - Segundo: implementar las formulas
  en JavaScript
