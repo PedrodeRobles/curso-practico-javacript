@@ -15,7 +15,6 @@ function calcularPrecioConDescuento(precio, descuento) {
 }
 
 //Funciones para conectar con html
-
 function onClickButtonPriceDiscount() {
     const inputPrice = document.getElementById("InputPrice");
     const valuePrice = inputPrice.value;
