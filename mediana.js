@@ -20,10 +20,16 @@ function calcularMediaAritmetica(lista) {
 }
 
 function calcularMediana(lista) {  // lista [1, 2 ,3]
-    const mitadLista = parseInt(lista.length / 2); //mitadLista = 2
+    const listaOrdenada = lista.sort(
+        function(numeroAnterior, numeroSiguiente) {
+            return numeroAnterior - numeroSiguiente;
+        } 
+        );
 
-    function esPar(numerito) {
-        if (numerito % 2 === 0){
+    const mitadLista = parseInt(listaOrdenada.length / 2); //mitadLista = 2
+
+    function esPar(numElementosLista) {
+        if (numElementosLista % 2 === 0){
             return true;
         } else {    // 3 / 2 = 1.5 osea false
             return false;
@@ -32,9 +38,9 @@ function calcularMediana(lista) {  // lista [1, 2 ,3]
 
     let mediana;
 
-    if (esPar(lista.length)) {
-        const elemento1 = lista[mitadLista - 1];
-        const elemento2 = lista[mitadLista];
+    if (esPar(listaOrdenada.length)) {
+        const elemento1 = listaOrdenada[mitadLista - 1];
+        const elemento2 = listaOrdenada[mitadLista];
 
         const promedioElemento1y2 = calcularMediaAritmetica([
             elemento1,
@@ -43,9 +49,11 @@ function calcularMediana(lista) {  // lista [1, 2 ,3]
 
         mediana = promedioElemento1y2;
     } else {
-       mediana = lista[mitadLista];
+       mediana = listaOrdenada[mitadLista];
     }
 
     return mediana;
 }
+
+
 
