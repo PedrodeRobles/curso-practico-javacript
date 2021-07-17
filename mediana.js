@@ -19,10 +19,10 @@ function calcularMediaAritmetica(lista) {
     return promedio;
 }
 
-function calcularMediana(lista) {  // lista [1, 2 ,3]
+function calcularMediana(lista) {  // lista [2, 30, 10 ,21]    
     const listaOrdenada = lista.sort(
         function(numeroAnterior, numeroSiguiente) {
-            return numeroAnterior - numeroSiguiente;
+            return numeroAnterior - numeroSiguiente;   // [30,10,21]
         } 
         );
 
