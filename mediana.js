@@ -55,5 +55,27 @@ function calcularMediana(lista) {  // lista [2, 30, 10 ,21]
     return mediana;
 }
 
+//HTML
+function resultado() {
+    const input1 = document.getElementById("Input1");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("Input2");
+    const value2 = Number(input2.value);
+
+    const input3 = document.getElementById("Input3");
+    const value3 = Number(input3.value);
+
+    const input4 = document.getElementById("Input4");
+    const value4 = Number(input4.value);
+
+    const listaUsuario = [value1, value2, value3, value4,];
+
+    const calculo = calcularMediana(listaUsuario);
+
+    const result = document.getElementById("Result");
+    result.innerText = "La mediana es: " + calculo;
+}
+
 
 
